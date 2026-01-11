@@ -16,7 +16,7 @@ class IntroScreen extends StatelessWidget {
 
             child: Image.asset('assets/images/nike_logo.png', height: 100),
           ),
-          SizedBox(height: 100),
+          SizedBox(height: 150),
           // Title
           Text('Just Do It', style: TextStyle(
             fontWeight: FontWeight.bold, fontSize: 20,
