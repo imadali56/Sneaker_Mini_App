@@ -11,19 +11,19 @@ class IntroScreen extends StatelessWidget {
       appBar: AppBar(backgroundColor: Colors.grey[300]),
       body: Column(
         children: [
-
           Center(
-
             child: Image.asset('assets/images/nike_logo.png', height: 100),
           ),
           SizedBox(height: 150),
           // Title
-          Text('Just Do It', style: TextStyle(
-            fontWeight: FontWeight.bold, fontSize: 20,
-          ),),
+          Text(
+            'Just Do It',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+          ),
           // Sub-Title
           Text(
-            'Exclusive new sneakers and custom kicks made with top-tier premium quality', textAlign: TextAlign.center,
+            'Exclusive new sneakers and custom kicks made with top-tier premium quality',
+            textAlign: TextAlign.center,
             style: TextStyle(color: Colors.grey, fontSize: 16),
           ),
           SizedBox(height: 20),
@@ -32,9 +32,12 @@ class IntroScreen extends StatelessWidget {
             padding: const EdgeInsets.all(25.0),
             // container
             child: GestureDetector(
-              onTap: (){
-      Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
-    },
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomeScreen()),
+                );
+              },
               child: Container(
                 width: double.infinity,
                 padding: EdgeInsets.all(20),
@@ -44,13 +47,18 @@ class IntroScreen extends StatelessWidget {
                 ),
                 // shop now text
                 child: Center(
-                  child: Text('Shop Now', style: TextStyle(
-                    fontWeight: FontWeight.bold, color: Colors.white, fontSize: 16,
-                  ),),
+                  child: Text(
+                    'Shop Now',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      fontSize: 16,
+                    ),
+                  ),
                 ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );
