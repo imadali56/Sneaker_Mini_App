@@ -1,4 +1,4 @@
-# sneaker_shop
+# updated_sneaker_app
 
 A new Flutter project.
 
