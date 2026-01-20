@@ -91,8 +91,9 @@ actions: [
                     color: Colors.grey[200], borderRadius: BorderRadius.circular(12)
                   ),
                   child: ListTile(
+                    leading: Image.asset(item.imagePath),
                     title: Text(item.name),
-                    subtitle: Text(item.price.toStringAsFixed(2)),
+                    subtitle: Text("\$${item.price.toStringAsFixed(0)}"),
                     trailing: IconButton(
                       onPressed: () => removeItemFromCart(context, item),
                       icon: Icon(Icons.remove, color: Colors.red[400]),
